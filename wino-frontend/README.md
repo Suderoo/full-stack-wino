@@ -1,8 +1,19 @@
-# React + Vite
+Po przeniesieniu do visuala musimy wpisać npm install, żeby odpaliło fronta
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+na uczelni zmienić w application.properties na taki:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+spring.application.name=wino-backend
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.datasource.url=jdbc:postgresql://localhost:5432/wino
+spring.datasource.username=postgres
+spring.datasource.password=student
+server.port= 8081
+
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+
+
+
+W samym froncie zmienić port api z 8080 na 8081 
