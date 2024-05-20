@@ -7,7 +7,7 @@ const PracownikComponent = () => {
     const [imie, setImie] = useState('')
     const [nazwisko, setNazwisko] = useState('')
     const [email, setEmail] = useState('')
-    const [numerTelefonu, setNumerTefonu] = useState('')
+    const [numerTelefonu, setNumerTelefonu] = useState('')
     const [stanowisko, setStanowisko] = useState('')
     const [wynagrodzenie, setWynagrodzenie] = useState('')
 
@@ -30,7 +30,7 @@ const PracownikComponent = () => {
                 setImie(response.data.imie);
                 setNazwisko(response.data.nazwisko);
                 setEmail(response.data.email);
-                setNumerTefonu(response.data.numerTelefonu);
+                setNumerTelefonu(response.data.numerTelefonu);
                 setStanowisko(response.data.stanowisko);
                 setWynagrodzenie(response.data.wynagrodzenie);
             }).catch(error => {
@@ -185,7 +185,7 @@ const PracownikComponent = () => {
                                 name='numerTelefonu'
                                 value={numerTelefonu}
                                 className={`form-control ${ errors.numerTelefonu ? 'is-invalid': '' } `}
-                                onChange={(e) => setNumerTefonu(e.target.value)}>
+                                onChange={(e) => setNumerTelefonu(e.target.value)}>
 
                                 </input>
                                 { errors.numerTelefonu && <div className='invalid-feedback'> { errors.numerTelefonu} </div>}

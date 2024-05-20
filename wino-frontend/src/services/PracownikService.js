@@ -10,4 +10,4 @@ export const getPracownik = (pracownikId) => axios.get(REST_API_BASE_URL + '/' +
 
 export const updatePracownik = (pracownikId, pracownik) => axios.put(REST_API_BASE_URL + '/' + pracownikId, pracownik);
 
-export const deletePracownk = (pracownikId) => axios.delete(REST_API_BASE_URL + '/' + pracownikId);
+export const deletePracownik = (pracownikId) => axios.delete(REST_API_BASE_URL + '/' + pracownikId);

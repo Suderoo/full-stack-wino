@@ -55,10 +55,10 @@ function App() {
             
             {/* // http://localhost:3000/wina */}
             <Route path='/wina' element={<ListWinoComponent />} />
-            {/* // http://localhost:3000/addWina */}
-            <Route path='/addWina' element={<WinoComponent />} />
-            {/* // http://localhost:3000/editWina/1 */}
-            <Route path='/editWina/:id' element={<WinoComponent />} />
+            {/* // http://localhost:3000/addWino */}
+            <Route path='/addWino' element={<WinoComponent />} />
+            {/* // http://localhost:3000/editWino/1 */}
+            <Route path='/editWino/:id' element={<WinoComponent />} />
           </Route>
         </Routes>
         <FooterComponent />

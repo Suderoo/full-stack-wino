@@ -34,15 +34,3 @@ public class Pracownik {
     public Pracownik(Long id, String lokalizacja, Double temperatura, Double wilgotnosc, Integer pojemnosc, Long winoId, Integer iloscButelek) {
     }
 }
-
-/*
-    @Column(name = "numer_telefonu")
-    private String numerTelefonu;
-    @Column(name = "stanowisko")
-    private String stanowisko;
-    @Column(name = "wynagrodzenie")
-    private Double wynagrodzenie;
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "winnica_id")
-    private Winnica winnica; // Relacja z Winnica
- */
