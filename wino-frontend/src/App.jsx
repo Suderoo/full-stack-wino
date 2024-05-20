@@ -5,6 +5,12 @@ import ListPracownikComponent from './components/ListPracownikComponent'
 import ListMagazynComponent from './components/ListMagazynComponent'
 import PracownikComponent from './components/PracownikComponent'
 import MagazynComponent from './components/MagazynComponent';
+import ListWinnicaComponent from './components/ListWinnicaComponent';
+import WinnicaComponent from './components/WinnicaComponent';
+import ListOdmianaComponent from './components/ListOdmianaComponent';
+import OdmianaComponent from './components/OdmianaComponent';
+import ListWinoComponent from './components/ListWinoComponent';
+import WinoComponent from './components/WinoComponent';
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
@@ -33,7 +39,26 @@ function App() {
             {/* // http://localhost:3000/editMagazyn/1 */}
             <Route path='/editMagazyn/:id' element={<MagazynComponent />} />
 
+            {/* // http://localhost:3000/winnice */}
+            <Route path='/winnice' element={<ListWinnicaComponent />} />
+            {/* // http://localhost:3000/addWinnice */}
+            <Route path='/addWinnica' element={<WinnicaComponent />} />
+            {/* // http://localhost:3000/editWinnice/1 */}
+            <Route path='/editWinnica/:id' element={<WinnicaComponent />} />
+
+            {/* // http://localhost:3000/odmiany */}
+            <Route path='/odmiany' element={<ListOdmianaComponent />} />
+            {/* // http://localhost:3000/addOdmiany */}
+            <Route path='/addOdmiana' element={<OdmianaComponent />} />
+            {/* // http://localhost:3000/editOdmiany/1 */}
+            <Route path='/editOdmiana/:id' element={<OdmianaComponent />} />
             
+            {/* // http://localhost:3000/wina */}
+            <Route path='/wina' element={<ListWinoComponent />} />
+            {/* // http://localhost:3000/addWina */}
+            <Route path='/addWina' element={<WinoComponent />} />
+            {/* // http://localhost:3000/editWina/1 */}
+            <Route path='/editWina/:id' element={<WinoComponent />} />
           </Route>
         </Routes>
         <FooterComponent />

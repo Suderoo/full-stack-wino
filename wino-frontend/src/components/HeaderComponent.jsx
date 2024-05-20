@@ -18,6 +18,15 @@ const HeaderComponent = () => {
             <li className="nav-item ml-20">
               <Link className="nav-link" to="/magazyny">Magazyny</Link>
             </li>
+            <li className="nav-item ml-20">
+              <Link className="nav-link" to="/winnice">Winnice</Link>
+            </li>
+            <li className="nav-item ml-20">
+              <Link className="nav-link" to="/odmiany">Odmiany</Link>
+            </li>
+            <li className="nav-item ml-20">
+              <Link className="nav-link" to="/wina">Wina</Link>
+            </li>
           </ul>
         </div>
       </nav>
